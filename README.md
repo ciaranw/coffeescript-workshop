@@ -18,7 +18,7 @@ The official compiler uses node.js however, and so does the repl so i'd advise y
 to install it. The installation steps above will do this for you.
 
 **useful commands**
-`coffee` - start the interactive repl
-`coffee [filename]` - run the provided coffeescript file
-`coffee -p [filename]` - print out the compiled javascript from the provided coffescript file
-`coffee -c [filename]` - compile the provided coffeescript file and write it out to a similarly named file
+* `coffee` - start the interactive repl
+* `coffee [filename]` - run the provided coffeescript file
+* `coffee -p [filename]` - print out the compiled javascript from the provided coffescript file
+* `coffee -c [filename]` - compile the provided coffeescript file and write it out to a similarly named file
