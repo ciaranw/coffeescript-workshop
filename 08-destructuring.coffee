@@ -12,20 +12,21 @@ calculation = (start) ->
 [base, plus2, times4] = calculation(2)
 
 # fishing out data from nested objects
-planetryData = {
-    title: 'planets',
-    data: {
-        venus: {
+planetryData =
+    title: 'planets'
+    data:
+        venus:
             distance: '100'
-        },
-        mars: {
-            temperature: {
+        
+        mars:
+            temperature:
                 degrees: 18,
                 farenheit: 36
-            }
-        }
-    }
-}
+            
+        
+    
+
+# destructuring assignments need to use the JSON-style object declaration
 
 {
     #locate the 'data' node of 'planetryData'

@@ -23,6 +23,7 @@ console.log(item) for item in ['box', 'tin', 'cake']
 
 # using guards on the loop...
 console.log(i) for i in [1..10] when i % 2 isnt 0 
+
 # or...
 for i in [1..10] when i % 2 isnt 0
     console.log(i)

@@ -1,4 +1,6 @@
-# functions are much more concise than in javascript
+# functions are much more concise than in javascript. They automatically return the result
+# of the last statement, so no need for explicit returns. It does mean that a void function
+# doesn't really exist anymore.
 myFunction = () ->
     console.log('hello')
 
@@ -14,7 +16,7 @@ debug = (message, args...) ->
     console.log(message, arg) for arg in args
     
 # you can call functions without the brackets:
-debug 'my message', 42, {key: 'value'}
+debug 'my message', 42, key: 'value'
 
 # ...but only if the function has arguments. no args functions still need the brackets:
 myFunction()
@@ -23,7 +25,7 @@ myFunction()
 # incredibly useful for things like jQuery event handlers. 
 # the @ symbol is an alias for 'this'
 
-myObj = {
+myObj =
     alert: (text) ->
         console.log(text)
         
@@ -39,8 +41,7 @@ myObj = {
             # value of 'this' to the DOM element for an event handler. 
             @onClick(e)
         )
-    
-}
+
 
 # you can create an inline closure by using the 'do' keyword.
 # this can capture or 'close' over the variables so you can 

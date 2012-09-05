@@ -19,12 +19,10 @@ console.log(inner)
 
 # you can soak up null references by using the existential operator: ?.
 
-lottery = {
+lottery =
     drawWinner: () ->
-        {
-            postCode: 'E1 6JJ'
-        }
-}
+        postCode: 'E1 6JJ'
+
 
 winningPostCode = lottery.drawWinner?().address?.postCode
 console.log(winningPostCode) # undefined, instead of error
